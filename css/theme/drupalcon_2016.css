@@ -1,0 +1,486 @@
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
+  color: #fff; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #fff;
+  background-color: #fff; }
+
+html body, html.greyskyline body {
+  background:url("../../assets/drupalcon-background2.jpg") no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.purpleskyline body {
+	background:url("../../assets/drupalcon-background1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.white body {
+  background:url("../../assets/header_1.png") no-repeat top center fixed, url("../../assets/footer_1.png") no-repeat bottom center fixed; 
+  background-size: contain;
+}
+
+html.purplestamp body {
+  background:url("../../assets/drupalcon-background4.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+html.purplechurch body {
+  background:url("../../assets/drupalcon-background3.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media screen and (max-width: 480px) {
+  html.white body {
+    padding-top: 100px;
+  }
+}
+
+.reveal {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-size: 70px;
+  font-weight: normal;
+  color: #222; }
+
+::selection {
+  color: #fff;
+  background: #98bdef;
+  text-shadow: none; }
+
+html.white .reveal .slides {
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 480px) {
+  html.white .reveal .slides {
+    margin-top: -1.5em; 
+  }
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit; 
+  height: 100%; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  margin: 0 0 20px 0;
+  color: #888636;
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-shadow: none;
+  word-wrap: break-word; }
+
+.reveal h1 {
+  font-size: 1em; 
+  font-family: 'Smythe', cursive; }
+
+.reveal h2 {
+  font-size: .8em;
+  color: white; }
+
+.reveal h3 {
+  font-size: .7em; 
+  color: #737373; }
+
+.reveal h4 {
+  font-size: .5em; }
+
+.reveal h1 {
+  text-shadow: none; }
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal p {
+  font-size: 0.435em;
+  margin: 20px 0;
+  line-height: 1.3; }
+
+.reveal p.caption {
+  color: #686868;
+  font-size: .3em;
+  margin: 3px 0;
+  color: #888636;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+.reveal img, .reveal video, .reveal iframe {
+  max-width: 95%;
+  max-height: 95%; }
+
+.reveal strong, .reveal b {
+  font-weight: bold; }
+
+.reveal em {
+  font-style: italic; }
+
+.reveal ol, .reveal dl, .reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  color: black;
+  font-size: .6em; }
+
+.reveal ol {
+  list-style-type: decimal; 
+  padding-left: 2em; }
+
+.reveal ol li {
+  margin: 15px;
+}
+
+.reveal ul ul, .reveal ul ol, .reveal ol ol, .reveal ol ul {
+  display: block;
+  margin-left: 0; }
+.reveal ul ul li, .reveal ul ol li, .reveal ol ol li, .reveal ol ul li {
+  margin-left: 0; }
+
+.reveal ul {
+  list-style:none; }
+.reveal ul li {
+  background:url(../../assets/list-item.png) no-repeat 0 10px; 
+  padding-left: 45px;
+  margin: 15px; }
+
+.reveal dt {
+  font-weight: bold; }
+
+.reveal dd {
+  margin-left: 40px; }
+
+.reveal q {
+  font-style: italic; }
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+
+.reveal code {
+  font-family: monospace; }
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+  background: #3F3F3F;
+  color: #DCDCDC; }
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.reveal table th {
+  font-weight: bold; }
+
+.reveal table th, .reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid; }
+
+.reveal table tr:last-child td {
+  border-bottom: none; }
+
+.reveal sup {
+  vertical-align: super; }
+
+.reveal sub {
+  vertical-align: sub; }
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top; }
+
+.reveal small * {
+  vertical-align: top; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: #888636;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img.image{
+  padding: 4px;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+  max-height: 57%;
+}
+.reveal img.cover-logo{
+  width: 70%;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #021845; }
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #021845; }
+
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #021845; }
+
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #021845; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #021845; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #021845; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #021845; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #021845; }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #021845; }
+
+/*********************************************
+ * Misc
+ *********************************************/
+p.bottom {
+  font-size: .5em;
+  letter-spacing: .2em;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+div.left {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  text-align: left;
+}
+div.right {
+  float: right;
+  width: 48%;
+  margin-left: 2%;
+  text-align: right;
+}
+p.left {
+  text-align: left;
+}
+.reveal .quote {
+  padding: 60px;
+  position: relative;
+  top: -130px;
+}
+.reveal .quote blockquote {
+  font-size: 40px;
+  color: #57308b;
+}
+.reveal .quote p.quote-author {
+  color: #57308b;
+}
+.reveal img.thirds {
+  max-width: 28%;
+  margin: 0 1%;
+}
+.reveal .main-title {
+  position: relative;
+  top: -116px;
+  box-shadow: 0 1px 9px black;
+  padding: 30px 20px;
+  color: #fff;
+}
+.reveal .subtitle {
+  position: relative;
+  margin: 0 auto;
+}
+.reveal .title-block h1, 
+.reveal .title-block h2, 
+.reveal .title-block h3, 
+.reveal .title-block h4, 
+.reveal .title-block h5 {
+  color: #fff;
+}
+.reveal .quote-block {
+  padding: 60px;
+  position: relative;
+  top: -130px;
+}
+
+/*********************************************
+ * Section Custom
+ *********************************************/
+.section-cover img {
+  padding-top: 15%;
+}
+.section-session-title .subtitle {
+  top: -160px;
+  width: 60%;
+  padding: 25px;
+  color: #fff;
+}
+.section-special .new-orleans-logo{
+  max-width: 275px;
+  padding-bottom: 36px;
+}
+
+.section-end h1 {
+  padding: 30px 60px;
+  font-family: 'Smythe', cursive;
+  color: #fff;
+}
+
+.section-end .evaluate {
+  position: relative;
+  top: -40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-end .thanks h2 {
+  font-family: 'Smythe', cursive;
+  padding: 0px;
+}
+
+.section-end .thanks::before {
+  content:url('../../assets/footer-flourish.png'); 
+  position:relative;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+}
+
+/*********************************************
+ * helpers
+ *********************************************/
+
+.reveal .half-width {
+  width:46%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.reveal .half-width img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.bg-purple {
+  background-color: #57308b;
+}
+
+.bg-gold {
+  background-color: #888636;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.color-gold {
+  color: #888636!important;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-purple {
+  color: #64489a;
+}
+
+.border-purple {
+  border: 5px solid #64489a!important;
+}
+
+.border-gold {
+  border: 3px solid #888636!important;
+}
+
+.padding-top-lg {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .padding-top-lg {
+    padding-top: 60px;
+  }
+}
+
+/*********************************************
+ * gallery
+ *********************************************/
+
+.reveal .gallery {
+  background-color: white;
+  padding: 15px 15px 0;
+  position: relative;
+}
+
+.reveal .gallery .gallery-image {
+  display: inline-block;
+  max-width: 290px;
+}
+
+.reveal .gallery::before {
+  content: url('../../assets/purplefooter-flourish2.png');
+  position: absolute;
+  left: 45%;
+  top: -62px;
+  z-index: -1;
+}
+.reveal .gallery::after {
+  content: url('../../assets/purplefooter-flourish-down2.png');
+  position: absolute;
+  left: 45%;
+  bottom: -62px;
+  z-index: -1;
+}
